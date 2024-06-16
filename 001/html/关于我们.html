@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <style>
+        /*初始化样式*/
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        .main{
+            width: 100%;
+            margin: auto;
+        }
+        .top, .head,.nav,.photo,.container,.footer{
+            display: flex;/*按列排版*/
+        }
+        .top{
+            
+            width: 100%;/*铺满浏览器*/
+        }
+        .t1{
+            background-color: aqua;
+            color: aqua;
+            float: left;
+            flex-grow: 1; /* 左边盒子占据剩余空间 */  
+        }
+        .t2{
+            background-color: orange;
+            color:#0e0e0e;
+            width:  330px;;
+            float: right;
+        }
+        .head,.nav,.photo,.container,.footer{
+            margin: auto;
+        }
+        .nav{
+            background-color: #333;
+        }
+        .h1{
+            background-color: burlywood;
+            float: left;
+            
+            width: 100px;
+            height: 100px;
+        }
+        .h2{
+            padding: 50px 50px;
+            flex-grow: 1; /* 左边盒子占据剩余空间 */ 
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover, .dropbtn {
+    background-color: #333;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #333;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+        .container{
+            display: flex;/*按列排版*/
+            /* 添加实线边框 */  
+            border: 1px solid #000; /* 1px宽度，实线，黑色 */ 
+            text-indent: 2em; /* 缩进两个字符的宽度，em是相对于当前字体大小的单位 */
+            height: 800px;
+        }
+        
+        .footer{
+            width: 100%;
+            height: 100px;
+            background: #9d9c9cb1;
+        }
+        .lside{
+            color: white;
+            background-color: blue;
+            display: block;
+            float: left;
+            width: 33.3%;
+        }
+        .rside{
+            color: white;
+            background-color: green;
+            width: 33.3%;
+            display: block;
+            float: right;
+        }
+        .content{
+            color: white;
+            background-color: red;
+            display: block;
+            width: 33.3%;
+           
+        }
+        .lside,.rside,.content{
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <hiv class="main">
+        <hiv class="top">
+            
+            <hiv class="t1"></hiv>
+            <hiv class="t2">
+                <hiv style="position: relative;left: 50px;">
+                    设为收藏
+                </hiv>
+                <hiv style="position: absolute;right: 50px;">
+                    设为首页
+                </hiv>
+            </hiv>
+        </hiv>
+        <hiv class="head">
+            <hiv class="h1"><img src="img/1.png" alt="Pulpit rock" width="120" height="120"></hiv>
+            <hiv class="h2">
+                <p style="font-size: 30px;">瑞腾教育培训中心</p>
+            </hiv>
+        </hiv>
+
+        <hiv class="nav">
+            <ul>
+                <li><a class="active" href="index.html">首页</a></li>
+                <li><a href="关于我们.html">关于我们</a></li>
+                <div class="dropdown">
+                  <a href="新闻资讯.html" class="dropbtn">新闻资讯</a>
+                  <div class="dropdown-content">
+                    <a href="#">新闻资讯 1</a>
+                    <a href="#">新闻资讯 2</a>
+                    <a href="#">新闻资讯 3</a>
+                  </div>
+                </div>
+                
+                <div class="dropdown">
+                    <a href="校园展示.html" class="dropbtn">校园展示</a>
+                    <div class="dropdown-content">
+                      <a href="#">校园展示 1</a>
+                      <a href="#">校园展示 2</a>
+                      <a href="#">校园展示 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="名师风采.html" class="dropbtn">名师风采</a>
+                </div>
+                <div class="dropdown">
+                    <a href="家长社区.html" class="dropbtn">家长社区</a>
+                </div>
+                <div class="dropdown">
+                    <a href="联系我们.html" class="dropbtn">联系我们</a>
+                </div>
+                <div class="dropdown">
+                    <a href="网上报名.html" class="dropbtn">网上报名</a>
+                </div>
+
+              </ul>
+        </hiv>
+        <hiv class="photo">
+            <img src="img/2.jpg" alt="Pulpit rock" width="100%" height="auto" >
+        </hiv>
+        <hiv class="container" >
+            <div class="lside">
+                <b>瑞腾教育培训中心成立于2004年，拥有多年的教育培训经验。</b>
+
+                <div>
+                    
+                    <p>在教育培训行业，变化是常态。</p>
+                    <p>瑞腾教育培训中心深知这一点，因此始终保持对最新教育理念和教学方法的敏锐洞察。</p>
+                    <p>我们不断引进国内外先进的教育资源，结合本地学生的实际需求，进行课程内容的创新和优化</p>。
+                    <p>同时，我们也鼓励教师团队进行教学方法的探索和创新，以提供更加高效、有趣的学习体验。</p>
+                </div>   
+            </div>
+            
+            <div class="content" >
+                <b>我们拥有一支高素质的教师团队和先进的教学设施，为学生提供舒适的学习环境。</b>
+                <div>
+                    
+                    <p>瑞腾教育培训中心注重学生的全面发展，不仅关注学生的学术成绩，更关心学生的综合素质提升。</p>
+                    <p>我们开设了丰富多彩的课外活动和实践课程，如科学实验、艺术创作、体育运动等，旨在
+                    培养学生的创新能力、团队协作能力和批判性思维。</p>
+                    <p>此外，我们还积极组织学生参与社会实践和志愿服务活动，让学生在实践中学习、成长。</p>。
+                </div>   
+            </div>
+            <div class="rside">
+                <b>我们秉承“以人为本，因材施教”的教育理念，为每位学生量身定制学习方案。</b>  
+                
+                <p>瑞腾教育培训中心始终将学生的需求放在首位，提供贴心的服务。</p>
+                <p>我们建立了完善的学生档案系统，记录学生的学习情况和成长轨迹，为家长提供及时的反馈和建议。</p>
+                <p>同时，我们还积极与家长保持沟通，定期组织家长座谈会，分享教育心得和成功案例，共同为学生的成长助力。</p>
+                <p>此外，我们还提供个性化的学习辅导和心理咨询服务，帮助学生解决学习和生活中的问题。</p>
+            </div>
+        </hiv>
+        <hiv class="footer">
+            <b>计算机网络课程设计 欧阳峰 </b>
+        </hiv>
+    </hiv>
+    
+</body>
+</html>
